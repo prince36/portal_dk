@@ -7,12 +7,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class LinkController {
 	
-	@RequestMapping(value="/")
+	@RequestMapping(value="/pp")
 	public ModelAndView mainPage() {
 		return new ModelAndView("home");
 	}
 	
-	@RequestMapping(value="/index")
+	@RequestMapping(value="/pp/index")
 	public ModelAndView indexPage() {
 		return new ModelAndView("home");
 	}
