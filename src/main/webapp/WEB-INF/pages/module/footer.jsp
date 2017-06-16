@@ -12,4 +12,11 @@
         <p>_</p>
         <p class="text-muted">Stopka.</p>
     </div>
+    <div>
+        <p class="text-center text-muted">© Copyright 2017 E-BOOTY</p>
+        <p>_</p>
+    </div>
+    <div>
+
+    </div>
 </footer>

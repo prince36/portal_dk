@@ -14,6 +14,7 @@
 			<div class="container">
 				<h1> ${greeting} </h1>
 				<p> ${tagline} </p>
+				<img src="<c:url value="/resources/images/hp1.PNG"></c:url>" class="img-responsive" alt="Responsive image">
 			</div>
 		</div>
 	</section>

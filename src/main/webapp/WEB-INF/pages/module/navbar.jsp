@@ -9,8 +9,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -18,13 +18,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand active" href="<spring:url value="/" />">Sklep</a>
+            <a class="navbar-brand active" href="<spring:url value="/" />">E-buty</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
+                <li><a href="<spring:url value="/buty" />">Męskie | <span class="sr-only">(current)</span></a></li>
+                <li><a href="<spring:url value="/buty" />">Damskie | <span class="sr-only">(current)</span></a></li>
+                <li><a href="<spring:url value="/buty" />">Dziecięce | <span class="sr-only">(current)</span></a></li>
                 <li><a href="<spring:url value="/products" />">Produkty <span class="sr-only">(current)</span></a></li>
-                <li><a href="<spring:url value="/products/add" />">Dodaj Produkt</a></li>
+                <li><a href="<spring:url value="/buty/add" />">Dodaj obuwie</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
