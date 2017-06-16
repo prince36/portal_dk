@@ -33,14 +33,14 @@
             <legend>Dodaj nowy produkt</legend>
             <div class="form-group">
                 <label class="control-label col-lg-2" for="brand">Producent </label>
-                <div class="col-lg-10">
+                <div class="col-lg-2">
                     <form:input id="brand" path="brand" type="text" class="form:input-large"/>
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="control-label col-lg-2" for="model">Model </label>
-                <div class="col-lg-10">
+                <div class="col-lg-2">
                     <div class="form:input-prepend">
                         <form:input id="model" path="model" type="text" class="form:input-large"/>
                     </div>
@@ -49,7 +49,7 @@
 
             <div class="form-group">
                 <label class="control-label col-lg-2" for="product_code">Kod produktu </label>
-                <div class="col-lg-10">
+                <div class="col-lg-2">
                     <div class="form:input-prepend">
                         <form:input id="product_code" path="product_code" type="text" class="form:input-large"/>
                     </div>
@@ -58,16 +58,14 @@
 
             <div class="form-group">
                 <label class="control-label col-lg-2" for="product_code">Płeć </label>
-                <div class="col-lg-10">
-                    <div class="form:input-prepend">
-                        <form:select path="gender" items="${genderList}" multiple="true" cssClass="dropdown-menu" aria-labelledby="dropdownMenu1"/>
-                    </div>
+                <div class="col-lg-2">
+                        <form:select path="gender" items="${genderList}" cssClass="form-control"/>
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="control-label col-lg-2" for="color">Kolor </label>
-                <div class="col-lg-10">
+                <div class="col-lg-2">
                     <div class="form:input-prepend">
                         <form:input id="color" path="color" type="text" class="form:input-large"/>
                     </div>
@@ -75,7 +73,7 @@
             </div>
             <div class="form-group">
                 <label class="control-label col-lg-2" for="category">Kategoria </label>
-                <div class="col-lg-10">
+                <div class="col-lg-2">
                     <div class="form:input-prepend">
                         <form:input id="category" path="category" type="text" class="form:input-large"/>
                     </div>
@@ -83,14 +81,14 @@
             </div>
             <div class="form-group">
                 <label class="control-label col-lg-2" for="description">Opis</label>
-                <div class="col-lg-10">
+                <div class="col-lg-2">
                     <form:textarea id="description" path="description" rows = "2"/>
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="control-label col-lg-2" for="price">Cena </label>
-                <div class="col-lg-10">
+                <div class="col-lg-2">
                     <div class="form:input-prepend">
                         <form:input id="price" path="price" type="text" class="form:input-large"/>
                     </div>

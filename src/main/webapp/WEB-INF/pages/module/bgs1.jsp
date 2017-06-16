@@ -9,15 +9,17 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<h3>Zobacz także:</h3>
-<div class="row">
-    <c:forEach items="${boots1}" var="boots1">
+<div class="container" style="max-width: 730px">
+    <h3 style="margin-left: 30px">Najczęściej kupowane:</h3>
+    <div class="row">
+        <c:forEach items="${boots1}" var="boots1">
 
-    <div class="col-xs-6 col-md-2">
-        <a href="<spring:url value="/buty/buty?id=${boot.idboots}" />" class="thumbnail">
-            <img src="<c:url value="/resources/boot/${boots1.idboots}.png"/>" alt="${boots1.model}" class="img-rounded img-responsive">
-        </a>
+        <div class="col-xs-6 col-md-3">
+            <a href="<spring:url value="/buty/buty?id=${boot.idboots}" />" class="thumbnail">
+                <img src="<c:url value="/resources/boot/${boots1.idboots}.png"/>" alt="${boots1.model}" class="img-rounded img-responsive">
+            </a>
+        </div>
+        </c:forEach>
+
     </div>
-    </c:forEach>
-
 </div>

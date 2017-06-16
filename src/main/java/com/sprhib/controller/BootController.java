@@ -35,7 +35,7 @@ public class BootController {
     @RequestMapping("/buty")
     public String getProductById(@RequestParam("id") Integer bootId, Model model) {
         model.addAttribute("boot", bootService.getBoot(bootId));
-        model.addAttribute("boots1", bootService.getBoots());
+        model.addAttribute("boots1", bootService.getBoots4I());
         return "boot";
     }
     @RequestMapping(value = "/add", method = RequestMethod.GET)
@@ -53,7 +53,7 @@ public class BootController {
         }
 
 
-        System.out.println("nowy produkt to: "+newBoot.getModel()+" id: "+newBoot.getIdboots());
+        System.out.println("nowy produkt to: "+newBoot.getModel()+" id: "+newBoot.getIdboots()+ " Opis: "+newBoot.getDescription());
         bootService.addBoot(newBoot);
         return "redirect:/buty";
     }

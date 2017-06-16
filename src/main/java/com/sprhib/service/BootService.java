@@ -14,4 +14,5 @@ public interface BootService {
     public Boot getBoot(int id);
     public void deleteBoot(int id);
     public List<Boot> getBoots();
+    public List<Boot> getBoots4I();
 }

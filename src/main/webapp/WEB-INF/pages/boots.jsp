@@ -33,8 +33,8 @@
                     <div class="caption">
                         <img src="<c:url value="/resources/boot/${boot.idboots}.png"></c:url>" alt="<c:url value="${boot.idboots}"></c:url>" style = "width: 100%" class="img-thumbnail"/>
                         <h3>${boot.brand} ${boot.model}</h3>
-                        <p>Kod produktu: ${boot.product_code}</p>
-                        <p>${boot.price} PLN</p>
+                        <p>Kategoria: ${boot.category}</p>
+                        <p><strong>Cena: </strong> ${boot.price} PLN</p>
                         <p>Płeć:
                             <c:if test = "${boot.gender == 'M'}"> Mężczyzna </c:if>
                             <c:if test = "${boot.gender == 'K'}"> Kobieta </c:if>

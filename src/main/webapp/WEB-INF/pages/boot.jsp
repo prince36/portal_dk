@@ -54,7 +54,7 @@
             <p>
                 <strong>Kategoria: </strong> ${boot.category}
             </p>
-            <h4>${boot.price} PLN</h4>
+            <h4><strong>Cena: </strong>${boot.price} PLN</h4>
             <p>
                 <a href="#" class="btn btn-warning btn-large">  Zamów teraz
                 </a> <a href="<spring:url value="/buty" />" class="btn btn-default"> powrót

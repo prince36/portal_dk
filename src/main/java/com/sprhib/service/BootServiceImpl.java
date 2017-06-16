@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by Ja on 16.06.2017.
@@ -36,5 +38,14 @@ public class BootServiceImpl implements BootService {
 
     public List<Boot> getBoots() {
         return bootDAO.getBoots();
+    }
+
+    public List<Boot> getBoots4I() {
+        List<Boot> temp = new ArrayList<>();
+        List<Boot> allBoots = bootDAO.getBoots();
+        Random x =new Random();
+        for (int i = 0; i < 4 ; i++) {
+            temp.add(allBoots.get(x.nextInt(allBoots.size())));
+        } return temp;
     }
 }
